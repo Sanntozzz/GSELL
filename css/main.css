@@ -1,0 +1,799 @@
+/* Criação de variaveis para futura utilização no projeto */
+:root {
+  --white: #fafafa;
+  --primary: #42a5f5;
+  --secondary: #263238;
+  --black: #212121;
+  --OpenSans: "Open Sans", sans-serif;
+  --Orbitron: "Orbitron", sans-serif;
+}
+
+/* Reset ao estilo da página */
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  font-family: var(--OpenSans);
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Definir cor de fundo e largura máxima da página */
+body {
+  background-color: var(--white);
+  width: 100%;
+}
+
+/* Remover decoração de hyperlinks */
+a {
+  text-decoration: none;
+}
+
+/* Reset ao estilo de um button */
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+/* Aplicar estilo a barra de navegação da página como cor de fundo e uma border-bottom */
+.topNavigation {
+  width: 100%;
+  background-color: var(--black);
+  border-bottom: 2px solid var(--primary);
+}
+
+/* Aplicar estilo ao logotipo da página */
+.logoGSELL {
+  width: auto;
+  height: 16;
+  margin: 10px;
+}
+
+/* Aplicar estilo ao icon do menu */
+.topNavigation > i {
+  float: right;
+  color: var(--primary);
+  padding: 10px;
+}
+
+
+/* Aplicar estilo aos botões do menu de navegação */
+.menuNavigation {
+  display: none;
+  border-bottom: 2px solid #4f98ca;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* Aplicar estilo aos hyperlinks do menu de navegação */
+.menuNavigation a {
+  display: block;
+  color: white;
+  text-transform: uppercase;
+  font-family: var(--Orbitron);
+  padding: 10px;
+}
+
+/* Aplicar estilo ao botão Categorias */
+#btnDropdown {
+  cursor: pointer;
+  color: white;
+  background-color: unset;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: var(--Orbitron);
+  width: 100%;
+  text-align: left;
+  padding: 10px;
+}
+
+/* Aplicar estilo quando o rato sobrepõe os botões */
+.menuNavigation a:hover,
+#btnDropdown:hover {
+  background-color: var(--primary);
+}
+
+#contentDropdown {
+  display: none;
+}
+
+/* Aplicar estilo ao conteudo dentro do dropdown Categorias */
+#contentDropdown a {
+  text-align: left;
+  color: black;
+  background-color: white;
+}
+
+/* Aplicar estilo quando o rato sobrepõe os botões */
+#contentDropdown a:hover {
+  color: white;
+  background-color: var(--secondary);
+}
+
+/* Criar um fundo para ser aplicado na página */
+.sectionIndex {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(39, 39, 39, 0.85),
+      rgba(39, 39, 39, 1)
+    ),
+    url("../images/INTRO_HEADER_BG.jpg");
+  background-position: 0px 0px, 50%, 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Alinha o conteudo verticalmente e horizontalmente */
+.containerIndex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contentIndex {
+  width: 80%;
+  color: white;
+  text-align: left;
+  border-left: 2px solid var(--primary);
+  padding-left: 20px;
+  margin: 50px 0;
+}
+
+/* Aplicar estilo ao h1 do contentIndex */
+.contentIndex h1 {
+  text-transform: uppercase;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+/* Aplicar estilo ao p do contentIndex */
+.contentIndex p {
+  text-align: justify;
+  font-size: 14px;
+}
+
+/* Aplicar estilo ao span dentro do p que se encontra no contentIndex */
+.contentIndex p span {
+  color: var(--primary);
+  font-weight: bold;
+}
+
+/* Aplicar margin superior e inferior de 50 pixeis e alinhar texto ao centro */
+.sectionProdutos {
+  margin: 50px auto;
+  text-align: center;
+}
+
+
+/* Aplicar estilo ao h1 do sectionProdutos */
+.sectionProdutos h1 {
+  text-transform: uppercase;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+
+/* Alinha o conteudo verticalmente e horizontalmente */
+.wrapperProdutos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Criar uma box onde vai conter toda a informação de um produto */
+.cardProduto {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px 20px;
+  padding: 10px;
+  min-width: 200px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* Define o tamanho da imagem do produto */
+.cardProduto img {
+  width: auto;
+  height: 100px;
+}
+
+/* Apresenta o conteudo do produto em coluna */
+.detailsProdutos {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+}
+
+/* Aplica estilo a um elemento do produto */
+.titleProduto {
+  margin: 10px 0;
+  font-weight: bold;
+  height: 40px;
+}
+
+/* Aplica estilo a um elemento do produto */
+.titleProduto > a {
+  color: black;
+  font-size: 12px;
+  text-align: left;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Aplica estilo a um elemento do produto */
+.titleProduto a:hover {
+  color: var(--primary);
+}
+
+/* Aplica estilo a um elemento do produto */
+.stockProduto {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+/* Aplica estilo a um elemento do produto */
+.stockProduto > span {
+  font-size: 12px;
+}
+
+/* Aplica estilo a um elemento do produto */
+.stockProduto span > i {
+  color: limegreen;
+  margin-right: 5px;
+}
+
+/* Aplica estilo a um elemento do produto */
+.priceProduto {
+  text-align: left;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+/* Aplica estilo a um elemento do produto */
+.cardProduto button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: var(--primary);
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 100%;
+  height: 30px;
+  border-radius: 22px;
+}
+
+/* Aplica estilo a um elemento do produto */
+.cardProduto button:hover {
+  background-color: var(--secondary);
+}
+
+/* Cria um container para as FAQ */
+.sectionFAQ {
+  width: 90%;
+  margin: 50px auto;
+}
+
+/* Aplicar estilo ao h1 do sectionFAQ */
+.sectionFAQ h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+/* Aplica uma margem superior e inferior de 20px */
+.wrapper_Geral {
+  margin: 20px 0;
+}
+
+/* Aplica estilo a label */
+.wrapper_Geral label {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Aplica estilo ao p do wrapper_Geral*/
+.wrapper_Geral p {
+  font-size: 14px;
+  text-align: justify;
+  margin: 10px 0;
+}
+
+/* Aplica estilo ao a do wrapper_Geral*/
+.wrapper_Geral a {
+  font-size: 14px;
+  color: var(--primary);
+}
+
+/* Aplica estilo ao a quando o rato sobrepõe */
+.wrapper_Geral a:hover {
+  text-decoration: underline;
+}
+
+.wrapper_QuestionsAnswers {
+  margin: 20px 0;
+}
+
+/* Aplica estilo ao button do wrapper_QuestionsAnswers */
+.wrapper_QuestionsAnswers button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: black;
+  background-color: unset;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: left;
+}
+
+/* Aplica estilo ao span do wrapper_QuestionsAnswers */
+.wrapper_QuestionsAnswers span {
+  color: var(--primary);
+}
+
+/* Aplica estilo ao p do wrapper_QuestionsAnswers */
+.wrapper_QuestionsAnswers p {
+  font-size: 14px;
+  margin-top: 20px;
+  text-align: justify;
+}
+
+/* Aplicar estilo a um hr do sectionFAQ */
+.sectionFAQ hr {
+  border: 0;
+  border-top: 1px solid black;
+}
+
+/* Definir uma largura e uma margem superior e inferior ao campo sectionContactos */
+.sectionContactos {
+  width: 80%;
+  margin: 50px auto;
+}
+
+/* Aplicar estilo ao h1 do sectionFAQ */
+.sectionContactos h1 {
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+/* Aplicar estilo as labels da formContact */
+#formContact label {
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+/* Aplicar estilo as inputs de tipo texto e email da formContact */
+#formContact input[type="text"],
+#formContact input[type="email"] {
+  font-size: 14px;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* Aplicar estilo a textarea da formContact */
+#formContact textarea {
+  font-size: 14px;
+  min-width: 100%;
+  max-width: 100%;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  width: 100%;
+  height: 120px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* Aplicar estilo ao button da formContact */
+#formContact button {
+  border-radius: 4px;
+  color: white;
+  background-color: var(--primary);
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 100%;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+  height: 40px;
+}
+
+/* Definir uma largura e uma margem superior e inferior ao campo sectionAreaCliente */
+.sectionAreaCliente {
+  width: 80%;
+  margin: 50px auto;
+}
+
+/* Aplicar estilo ao h1 da sectionAreaCliente */
+.sectionAreaCliente h1 {
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.wrapperQuestion {
+  text-align: left;
+}
+
+/* Aplicar estilo ao span do wrapperQuestion */
+.wrapperQuestion span {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+/* Aplicar uma margem inferior ao elemento quando utilizado a class .Answer */
+.wrapperQuestion .Answer {
+  margin-bottom: 8px;
+}
+
+/* Definir tamanho da fonte da label dentro da Answer */
+.wrapperQuestion .Answer label {
+  font-size: 14px;
+}
+
+/* Aplicar estilo ao hr do wrapperQuestionForm */
+.wrapperQuestionForm hr {
+  margin: 20px 0;
+  border-top: 1px solid black;
+}
+
+/* Aplicar estilo ao span dentro do formLoginRegister */
+#formLoginRegister span {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+/* Aplicar estilo a label dentro do formLoginRegister */
+#formLoginRegister label {
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+/* Aplicar estilo aos campos de tipo texto, email e password dentro do formLoginRegister */
+#formLoginRegister input[type="text"],
+#formLoginRegister input[type="email"],
+#formLoginRegister input[type="password"] {
+  font-size: 14px;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* Aplicar estilo ao botão dentro do formLoginRegister */
+#formLoginRegister button {
+  border-radius: 4px;
+  color: white;
+  background-color: var(--primary);
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 100%;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+  height: 40px;
+}
+
+/* Dar estilo aos hyperlinks dentro do formlogin */
+#formLogin a {
+  display: block;
+  text-align: left;
+  font-size: 14px;
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+/* Dar estilo quando o rato sobrepõe os hyperlinks dentro do formlogin */
+#formLogin a:hover {
+  text-decoration: underline;
+}
+
+.sectionAcceptTerms {
+  margin-bottom: 10px;
+}
+
+.sectionAcceptTerms label {
+  font-weight: normal !important;
+  text-transform: none !important;
+}
+.sectionAcceptTerms a {
+  color: var(--primary);
+  font-size: 14px;
+}
+.sectionAcceptTerms a:hover {
+  text-decoration: underline;
+}
+
+/* Definir largura do rodapé */
+footer {
+  width: 100%;
+}
+
+/* Definir que a Newletter vai ser apresentada em coluna e alinhado verticalmente e horizontalmente */
+.sectionNewsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondary);
+  padding: 20px 0;
+}
+
+/*  Aplicar cor e tamanho de fonte ao texto dentro do wrapperTextNewsletter */
+.wrapperTextNewsletter {
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.wrapperTextNewsletter label {
+  display: block;
+}
+
+.titleNewsletter {
+  font-weight: 700;
+}
+
+
+/* Aplicar estilo ao campo com o formulário formNewsletter*/
+#formNewsletter {
+  display: flex;
+  margin-top: 20px;
+  height: 40px;
+  border-radius: 22px;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* Aplicar estilo ao campo email da formNewsletter*/
+#formNewsletter input[type="email"] {
+  height: 40px;
+  width: 200px;
+  font-size: 14px;
+  padding-left: 20px;
+  border-top-left-radius: 22px;
+  border-bottom-left-radius: 22px;
+}
+
+/* Aplicar estilo ao botão da formNewsletter*/
+#formNewsletter button {
+  width: 100px;
+  height: 40px;
+  color: white;
+  background-color: var(--primary);
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-right: 11px;
+  border-top-right-radius: 22px;
+  border-bottom-right-radius: 22px;
+}
+
+.sectionFooter {
+  display: flex;
+  align-items: center;
+  background-color: var(--black);
+}
+
+/* Definir a class rowFooter para ser apresentado em coluna */
+.sectionFooter .rowFooter {
+  display: flex;
+  flex-direction: column;
+  margin: 25px 15px;
+}
+
+/* Definir uma margem inferior a columnFooter menos ao ultimo elemento*/
+.sectionFooter .columnFooter:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.sectionFooter label {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Definir tamanho para a imagem do sectionFooter */
+.sectionFooter img {
+  display: block;
+  height: 16px;
+  width: auto;
+}
+
+.sectionFooter ul {
+  list-style: none;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+/* Definir uma margem inferior a li menos ao ultimo elemento*/
+.sectionFooter ul li:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+/* Aplicar a cor grey ao a do campo li */
+.sectionFooter li > a {
+  color: grey;
+}
+
+
+/* Aplicar uma cor definida por uma variavel quando o rato sobrepõe a mesma */
+.sectionFooter li > a:hover {
+  color: var(--primary);
+}
+
+/* Aplicar uma cor e justificar o texto do p dentro do li */
+.sectionFooter li > p {
+  color: grey;
+  text-align: justify;
+}
+
+/* CSS para aplicar o responsive aos elementos do site quando está em um ecra desktop com largura superior a 768px */
+@media (min-width: 768px) {
+  html {
+    position: relative;
+    min-height: 100%;
+  }
+
+  body {
+    margin-bottom: 350px;
+  }
+
+  .topNavigation {
+    display: flex;
+    align-items: center;
+    border: none;
+  }
+
+  .topNavigation > i {
+    display: none;
+  }
+
+  .menuNavigation {
+    display: initial;
+    margin-left: auto;
+    border: none;
+  }
+
+  .menuNavigation a {
+    float: left;
+  }
+
+  #menuDropdown {
+    float: left;
+  }
+
+  #contentDropdown {
+    position: absolute;
+    min-width: 180px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  #contentDropdown a {
+    float: none;
+  }
+
+  .containerIndex {
+    margin-left: 100px;
+    height: 400px;
+  }
+
+  .contentIndex {
+    width: 700px;
+    margin: 0;
+  }
+
+  .contentIndex h1 {
+    font-size: 40px;
+  }
+
+  .contentIndex p {
+    font-size: 16px;
+  }
+
+  .wrapperProdutos {
+    flex-direction: row;
+  }
+
+  .cardProduto {
+    display: block;
+    width: 200px;
+  }
+
+  .cardProduto img {
+    height: 150px;
+  }
+
+  .detailsProdutos {
+    margin: 0 5px;
+  }
+
+  .sectionFAQ {
+    max-width: 1000px;
+  }
+
+  .sectionContactos {
+    width: 450px;
+  }
+
+  .sectionAreaCliente {
+    width: 450px;
+  }
+
+  footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .sectionNewsletter {
+    flex-direction: row;
+  }
+
+  .wrapperTextNewsletter {
+    text-align: left;
+  }
+
+  #formNewsletter {
+    margin: 0;
+    margin-left: 100px;
+  }
+
+  #formNewsletter input[type="email"] {
+    width: 300px;
+  }
+
+  .sectionFooter {
+    justify-content: center;
+  }
+
+  .sectionFooter .rowFooter {
+    flex-direction: row;
+    margin: 25px 50px;
+  }
+
+  .sectionFooter .columnFooter:first-child {
+    width: 350px;
+  }
+
+  .sectionFooter .columnFooter:not(:first-child) {
+    margin-left: 100px;
+  }
+
+  .sectionFooter .columnFooter:not(:last-child) {
+    margin-bottom: 0;
+  }
+}

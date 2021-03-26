@@ -1,0 +1,232 @@
+<html lang="en">
+
+<head>
+  <!-- Encoding da página -->
+  <meta charset="UTF-8" />
+  <!-- Configura o viewport para a página aparecer corretamente em todos os dispositivos -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Define palavra-chaves para serviços de pesquisa -->
+  <meta name="keywords" content="HTML, CSS, JavaScript, GSELL" />
+  <!-- Define uma descrição para a página -->
+  <meta name="description" content="Loja de Informática GSELL" />
+  <!-- Define os autores da página -->
+  <meta name="author" content="João Santos, Leonardo Cardoso" />
+  <!-- Atualiza a página a cada 300 segundos -->
+  <meta http-equiv="refresh" content="300" />
+  <!-- Título da página -->
+  <title>Loja Online | GSELL</title>
+  <!-- Icone da página -->
+  <link rel="icon" href="favicon.svg" />
+  <!-- Importação do Font Awesome a partir do CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+    crossorigin="anonymous" />
+  <!-- Importação de fontes a partir do Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Orbitron:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <!-- Importação do main.css que aplica o estilo nos elementos da página -->
+  <link rel="stylesheet" href="css/main.css" />
+  <!-- Importação do JQuery a partir do CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+    crossorigin="anonymous"></script>
+  <!-- Importação do main.js que aplica o javascript nos elementos da página -->
+  <script src="js/main.js"></script>
+</head>
+
+<body>
+  <!-- Menu de navegação -->
+  <div class="topNavigation">
+    <!-- Imagem do menu de navegação -->
+    <a href="index.html"><img src="images/GSELL.svg" class="logoGSELL" /></a>
+    <!-- Icone para o menu de navegação em dispositivos móveis-->
+    <i class="fas fa-bars"></i>
+    <!-- Menu Dropdown -->
+    <div class="menuNavigation">
+      <div id="menuDropdown">
+        <button id="btnDropdown">
+          Categorias
+          <i class="fas fa-angle-down"></i>
+        </button>
+        <!-- Conteudo do menu dropdown -->
+        <div id="contentDropdown">
+          <!-- Link para a página catComponentes.html -->
+          <a href="catComponentes.html">Componentes</a>
+          <!-- Link para a página catPerifericos.html -->
+          <a href="catPerifericos.html">Periféricos</a>
+        </div>
+      </div>
+      <!-- Link para a página contact.html -->
+      <a href="contact.html">Contactos</a>
+      <!-- Link para a página clientarea.html -->
+      <a href="clientarea.html">Área Cliente</a>
+    </div>
+  </div>
+
+  <!-- Secção onde é apresentado as perguntas frequentes do site -->
+  <section class="sectionFAQ">
+    <h1>Perguntas Frequentes</h1>
+    <div class="wrapper_Geral">
+      <label>Geral</label>
+      <p>
+        Se tem uma questão, é provável que a sua resposta se encontre nesta
+        secção. Faça uma pequena pesquisa e obtenha a resposta para sua
+        questão de forma rápida e cómoda! Caso a sua dúvida persista, pode
+        entrar em contacto connosco através de e-mail para o info@gsell.pt,
+        responderemos no próprio dia se nos contactar até ás 18h.
+      </p>
+      <a href="#" target="_blank">Ainda com dúvidas? Contacte-nos!</a>
+    </div>
+    <!-- Perguntas e as respectivas respostas -->
+    <div class="wrapper_QuestionsAnswers">
+      <button id="hiddenQuestion1">
+        <span>1.</span> Os preços dos produtos encontrados na loja online já
+        incluem IVA? <i class="fas fa-angle-down"></i>
+      </button>
+      <p id="hiddenAnswer1" style="display: none">
+        Sim. Todos os nossos preços já incluem IVA à taxa legal em vigor.
+      </p>
+    </div>
+    <hr />
+    <div class="wrapper_QuestionsAnswers">
+      <button id="hiddenQuestion2">
+        <span>2.</span> A GSELL compra material usado? Aceita retoma?
+        <i class="fas fa-angle-down"></i>
+      </button>
+      <p id="hiddenAnswer2" style="display: none">
+        Não. Não compramos material usado nem aceitamos qualquer tipo de
+        retomas.
+      </p>
+    </div>
+    <hr />
+    <div class="wrapper_QuestionsAnswers">
+      <button id="hiddenQuestion3">
+        <span>3.</span> A GSELL efetua seguros dos produtos que comercializa?
+        <i class="fas fa-angle-down"></i>
+      </button>
+      <p id="hiddenAnswer3" style="display: none">
+        Sim, efetuamos seguros em 6 categorias de produto: Smartphones,
+        Telemóveis, Tablets, Portáteis, Monitores ou Televisões. Dentro da
+        página de cada produto destas 6 categorias poderá encontrar a opção de
+        adicionar um seguro MAPFRE WARRANTY. Consulte aqui todas as
+        informações relativamente aos seguros MAPFRE WARRANTY.
+      </p>
+    </div>
+    <hr />
+    <div class="wrapper_QuestionsAnswers">
+      <button id="hiddenQuestion4">
+        <span>4.</span> Sou Youtuber e procuro uma parceria. Quem devo
+        contactar? <i class="fas fa-angle-down"></i>
+      </button>
+      <p id="hiddenAnswer4" style="display: none">
+        Se acha que tem o que é necessário para ser um parceiro da GSELL,
+        envie-nos um e-mail para o Departamento de Marketing com toda a
+        informação necessária de forma a podermos analisar a sua candidatura.
+      </p>
+    </div>
+    <hr />
+    <div class="wrapper_QuestionsAnswers">
+      <button id="hiddenQuestion5">
+        <span>5.</span> Recebi um equipamento que não funciona. Como devo
+        proceder agora? <i class="fas fa-angle-down"></i>
+      </button>
+      <p id="hiddenAnswer5" style="display: none">
+        Se o produto que recebeu não está a funcionar de forma correcta deverá
+        contactar o nosso departamento técnico assim que detectar o problema,
+        através de uma de três formas:
+        <br />
+        <br />
+        <b>Email:</b> envie-nos um email para o Departamento Técnico de Lisboa
+        ou Porto, indicando qual a situação que está a detectar, bem como o nº
+        de encomenda e NIF;
+        <br />
+        <br />
+        <b>Conta cliente:</b> aceda à sua conta de cliente no site e no
+        separador RMA/Suporte, deverá escolher qual o nº da sua encomenda. A
+        partir daí, basta preencher o formulário e aguardar por um contacto do
+        nosso Departamento Técnico. Após o seu contacto, iremos necessitar que
+        o equipamento venha para um dos nossos departamentos Técnicos a fim de
+        ser avaliada a avaria. Consoante o problema detectado e caso este seja
+        coberto pela garantia, o produto poderá ser devolvido, reparado pela
+        marca ou trocado por outro.
+      </p>
+    </div>
+    <hr />
+  </section>
+
+  <footer>
+    <!-- Newsletter da página -->
+    <section class="sectionNewsletter">
+      <div class="wrapperTextNewsletter">
+        <label class="titleNewsletter">
+          Receba as novidades e promoções da GSELL
+        </label>
+        <label class="subtitleNewsletter">Diretamente No Seu Email</label>
+      </div>
+      <!-- Form onde o utilizar insere o email onde quer receber as novidade do site -->
+      <form id="formNewsletter" action="#">
+        <input type="email" name="Email" placeholder="Email" />
+        <button>Enviar</button>
+      </form>
+    </section>
+    <!-- Rodapé da página -->
+    <section class="sectionFooter">
+      <div class="rowFooter">
+        <div class="columnFooter">
+          <img src="images/GSELL.svg" alt="GSELL" />
+          <ul>
+            <li>
+              <p>
+                As imagens apresentadas podem não corresponder às
+                especificações do produto no Mercado Português. Por questões
+                técnicas, as cores apresentadas podem deferir ligeiramente das
+                cores reais.
+              </p>
+              <br />
+              <p>© 2021 GSELL. Todos os direitos reservados.</p>
+            </li>
+          </ul>
+        </div>
+        <div class="columnFooter">
+          <label>Categorias</label>
+          <ul>
+            <li>
+              <!-- Link para a página catComponentes.html -->
+              <a href="catComponentes.html">Componentes</a>
+            </li>
+            <li>
+              <!-- Link para a página catPeriféricos.html -->
+              <a href="catPerifericos.html">Periféricos</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="columnFooter">
+          <label>Loja</label>
+          <ul>
+            <li>
+              <!-- Link para a página contact.html -->
+              <a href="contact.html">Contacte-nos</a>
+            </li>
+            <li>
+              <!-- Link para a página clientarea.html -->
+              <a href="clientarea.html">Área de Cliente</a>
+            </li>
+          </ul>
+        </div>
+        <div class="columnFooter">
+          <label>Suporte ao cliente</label>
+          <ul>
+            <li>
+              <!-- Link para a página faq.html -->
+              <a href="faq.html">FAQ's</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </footer>
+</body>
+
+</html>

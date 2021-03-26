@@ -1,0 +1,501 @@
+<html lang="en">
+
+<head>
+  <!-- Encoding da página -->
+  <meta charset="UTF-8" />
+  <!-- Configura o viewport para a página aparecer corretamente em todos os dispositivos -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Define palavra-chaves para serviços de pesquisa -->
+  <meta name="keywords" content="HTML, CSS, JavaScript, GSELL" />
+  <!-- Define uma descrição para a página -->
+  <meta name="description" content="Loja de Informática GSELL" />
+  <!-- Define os autores da página -->
+  <meta name="author" content="João Santos, Leonardo Cardoso" />
+  <!-- Atualiza a página a cada 300 segundos -->
+  <meta http-equiv="refresh" content="300" />
+  <!-- Título da página -->
+  <title>Loja Online | GSELL</title>
+  <!-- Icone da página -->
+  <link rel="icon" href="favicon.svg" />
+  <!-- Importação do Font Awesome a partir do CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+    crossorigin="anonymous" />
+  <!-- Importação de fontes a partir do Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Orbitron:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <!-- Importação do main.css que aplica o estilo nos elementos da página -->
+  <link rel="stylesheet" href="css/main.css" />
+  <!-- Importação do JQuery a partir do CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+    crossorigin="anonymous"></script>
+  <!-- Importação do main.js que aplica o javascript nos elementos da página -->
+  <script src="js/main.js"></script>
+</head>
+
+<body>
+  <!-- Menu de navegação -->
+  <div class="topNavigation">
+    <!-- Imagem do menu de navegação -->
+    <a href="index.html"><img src="images/GSELL.svg" class="logoGSELL" /></a>
+    <!-- Icone para o menu de navegação em dispositivos móveis-->
+    <i class="fas fa-bars"></i>
+    <!-- Menu Dropdown -->
+    <div class="menuNavigation">
+      <div id="menuDropdown">
+        <button id="btnDropdown">
+          Categorias
+          <i class="fas fa-angle-down"></i>
+        </button>
+        <!-- Conteudo do menu dropdown -->
+        <div id="contentDropdown">
+          <!-- Link para a página catComponentes.html -->
+          <a href="catComponentes.html">Componentes</a>
+          <!-- Link para a página catPerifericos.html -->
+          <a href="catPerifericos.html">Periféricos</a>
+        </div>
+      </div>
+      <!-- Link para a página contact.html -->
+      <a href="contact.html">Contactos</a>
+      <!-- Link para a página clientarea.html -->
+      <a href="clientarea.html">Área Cliente</a>
+    </div>
+  </div>
+
+  <!-- Secção de produtos -->
+  <!-- Código repete-se ao longo em todas as "sectionProdutos" -->
+  <section class="sectionProdutos">
+    <h1>Monitores</h1>
+    <div class="wrapperProdutos">
+      <!-- Produto -->
+      <div class="cardProduto">
+        <!-- Imagem do Produto -->
+        <img src="assets/Monitor_1.jpg" />
+        <!-- Detalhes do produto tais como nome, stock e preço -->
+        <div class="detailsProdutos">
+          <div class="titleProduto">
+            <a href="#" title="Monitor Curvo Samsung Odyssey G9 QLED VA 49'' Dual QHD 32:9 240Hz">Monitor Curvo Samsung
+              Odyssey G9 QLED VA 49" Dual QHD 32:9
+              240Hz</a>
+          </div>
+          <div class="stockProduto">
+            <span><i class="fas fa-circle"></i>Em stock</span>
+          </div>
+          <div class="priceProduto">
+            <span>1499,90 €</span>
+          </div>
+        </div>
+      </div>
+      <div class="cardProduto">
+        <img src="assets/Monitor_2.jpg" />
+        <div class="detailsProdutos">
+          <div class="titleProduto">
+            <a href="#" title="Monitor AOC Q27G2U VA 27'' QHD 16:9 144Hz FreeSync">Monitor AOC Q27G2U VA 27" QHD 16:9
+              144Hz FreeSync</a>
+          </div>
+          <div class="stockProduto">
+            <span><i class="fas fa-circle"></i>Em stock</span>
+          </div>
+          <div class="priceProduto">
+            <span>309,90 €</span>
+          </div>
+        </div>
+      </div>
+      <div class="cardProduto">
+        <img src="assets/Monitor_3.jpg" />
+        <div class="detailsProdutos">
+          <div class="titleProduto">
+            <a href="#" title="Monitor Curvo AOC C24G2U/BK VA 23.6'' FHD 16:9 165Hz FreeSync">Monitor Curvo AOC
+              C24G2U/BK VA 23.6" FHD 16:9 165Hz FreeSync</a>
+          </div>
+          <div class="stockProduto">
+            <span><i class="fas fa-circle"></i>Em stock</span>
+          </div>
+          <div class="priceProduto">
+            <span>199,90 €</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sectionProdutos">
+    <h1>Teclados</h1>
+    <div class="wrapperProdutos">
+      <div class="cardProduto">
+        <img src="assets/Teclado_3.jpg" />
+        <div class="detailsProdutos">
+          <div class="titleProduto">
+            <a href="#" title="Teclado Mecânico Asus ROG Strix Scope TKL RGB PT Cherry MX
+                Red">Teclado Mecânico Asus ROG Strix Scope TKL RGB PT Cherry MX
+              Red</a>
+          </div>
+          <div class="stockProduto">
+            <span><i class="fas fa-circle"></i>Em stock</span>
+          </div>
+          <div class="priceProduto">
+            <span>139,90 €</span>
+          </div>
+        </div>
+      </div>
+      <div class="cardProduto">
+        <img src="assets/Teclado_2.jpg" />
+        <div class="detailsProdutos">
+          <div class="titleProduto">
+            <a href="#" title="Teclado Mecânico Ducky ONE 2 SF RGB ABS PT 65% Pure White MX Red">Teclado Mecânico Ducky
+              ONE 2 SF RGB ABS PT 65% Pure White MX
+              Red</a>
+          </div>
+          <div class="stockProduto">
+            <span><i class="fas fa-circle"></i>Em stock</span>
+          </div>
+          <div class="priceProduto">
+            <span>114,90 €</span>
+          </div>
+        </div>
+      </div>
+      <div class="cardProduto">
+        <img src="assets/Teclado_3.jpg" />
+        <div class="detailsProdutos">
+          <div class="titleProduto">
+            <a href="#" title="Teclado Mecânico Fox Gaming FK63T PT TKL RGB Outemu Red">Teclado Mecânico Fox Gaming
+              FK63T PT TKL RGB Outemu Red</a>
+          </div>
+          <div class="stockProduto">
+            <span><i class="fas fa-circle"></i>Em stock</span>
+          </div>
+          <div class="priceProduto">
+            <span>69,90 €</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sectionProdutos">
+    <h1>Ratos</h1>
+    <div class="wrapperProdutos">
+      <div class="cardProduto">
+        <img src="assets/Rato_1.jpg" />
+        <div class="detailsProdutos">
+          <div class="titleProduto">
+            <a href="#" title="Rato Asus ROG Chakram RGB Wireless 16000DPI">Rato Asus ROG Chakram RGB Wireless
+              16000DPI</a>
+          </div>
+          <div class="stockProduto">
+            <span><i class="fas fa-circle"></i>Em stock</span>
+          </div>
+          <div class="priceProduto">
+            <span>169,90 €</span>
+          </div>
+        </div>
+      </div>
+      <div class="cardProduto">
+        <img src="assets/Rato_2.jpg" />
+        <div class="detailsProdutos">
+          <div class="titleProduto">
+            <a href="#" title="Rato Óptico Glorious PC Gaming Race Model O Wireless 19000DPI Branco">Rato Óptico
+              Glorious PC Gaming Race Model O Wireless 19000DPI
+              Branco</a>
+          </div>
+          <div class="stockProduto">
+            <span><i class="fas fa-circle"></i>Em stock</span>
+          </div>
+          <div class="priceProduto">
+            <span>89,90 €</span>
+          </div>
+        </div>
+      </div>
+      <div class="cardProduto">
+        <img src="assets/Rato_3.jpg" />
+        <div class="detailsProdutos">
+          <div class="titleProduto">
+            <a href="#" title="Rato Óptico SteelSeries Rival 3 Wireless 18000DPI Preto">Rato Óptico SteelSeries Rival 3
+              Wireless 18000DPI Preto</a>
+          </div>
+          <div class="stockProduto">
+            <span><i class="fas fa-circle"></i>Em stock</span>
+          </div>
+          <div class="priceProduto">
+            <span>59,90 €</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sectionProdutos">
+    <h1>Mousepads</h1>
+    <div class="wrapperProdutos">
+      <div class="cardProduto">
+        <img src="assets/Mousepad_1.jpg" />
+        <div class="detailsProdutos">
+          <div class="titleProduto">
+            <a href="#" title="Tapete SteelSeries QcK Prism Cloth 3XL RGB">Tapete SteelSeries QcK Prism Cloth 3XL
+              RGB</a>
+          </div>
+          <div class="stockProduto">
+            <span><i class="fas fa-circle"></i>Em stock</span>
+          </div>
+          <div class="priceProduto">
+            <span>109,90 €</span>
+          </div>
+        </div>
+      </div>
+      <div class="cardProduto">
+        <img src="assets/Mousepad_2.jpg" />
+        <div class="detailsProdutos">
+          <div class="titleProduto">
+            <a href="#" title="Tapete Razer Firefly V2">Tapete Razer Firefly V2</a>
+          </div>
+          <div class="stockProduto">
+            <span><i class="fas fa-circle"></i>Em stock</span>
+          </div>
+          <div class="priceProduto">
+            <span>59,90 €</span>
+          </div>
+        </div>
+      </div>
+      <div class="cardProduto">
+        <img src="assets/Mousepad_3.jpg" />
+        <div class="detailsProdutos">
+          <div class="titleProduto">
+            <a href="#" title="Tapete Krom Knout Speed Special Edition">Tapete Krom Knout Speed Special Edition</a>
+          </div>
+          <div class="stockProduto">
+            <span><i class="fas fa-circle"></i>Em stock</span>
+          </div>
+          <div class="priceProduto">
+            <span>3,90 €</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sectionProdutos">
+    <h1>Headsets</h1>
+    <div class="wrapperProdutos">
+      <div class="cardProduto">
+        <img src="assets/Headset_3.jpg" />
+        <div class="detailsProdutos">
+          <div class="titleProduto">
+            <a href="#" title="Headset SteelSeries Arctis Pro Wireless Preto">Headset SteelSeries Arctis Pro Wireless
+              Preto</a>
+          </div>
+          <div class="stockProduto">
+            <span><i class="fas fa-circle"></i>Em stock</span>
+          </div>
+          <div class="priceProduto">
+            <span>299,90 €</span>
+          </div>
+        </div>
+      </div>
+      <div class="cardProduto">
+        <img src="assets/Headset_2.jpg" />
+        <div class="detailsProdutos">
+          <div class="titleProduto">
+            <a href="#" title="Headset JBL Quantum 600 Gaming Wireless">Headset JBL Quantum 600 Gaming Wireless</a>
+          </div>
+          <div class="stockProduto">
+            <span><i class="fas fa-circle"></i>Em stock</span>
+          </div>
+          <div class="priceProduto">
+            <span>149,90 €</span>
+          </div>
+        </div>
+      </div>
+      <div class="cardProduto">
+        <img src="assets/Headset_3.jpg" />
+        <div class="detailsProdutos">
+          <div class="titleProduto">
+            <a href="#" title="Headset HyperX Cloud II 7.1 Vermelho">Headset HyperX Cloud II 7.1 Vermelho</a>
+          </div>
+          <div class="stockProduto">
+            <span><i class="fas fa-circle"></i>Em stock</span>
+          </div>
+          <div class="priceProduto">
+            <span>99,90 €</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sectionProdutos">
+    <h1>Webcam</h1>
+    <div class="wrapperProdutos">
+      <div class="cardProduto">
+        <img src="assets/Webcam_1.jpg" />
+        <div class="detailsProdutos">
+          <div class="titleProduto">
+            <a href="#" title="Webcam Logitech Brio 4K Ultra HD">Webcam Logitech Brio 4K Ultra HD</a>
+          </div>
+          <div class="stockProduto">
+            <span><i class="fas fa-circle"></i>Em stock</span>
+          </div>
+          <div class="priceProduto">
+            <span>209,90 €</span>
+          </div>
+        </div>
+      </div>
+      <div class="cardProduto">
+        <img src="assets/Webcam_2.jpg" />
+        <div class="detailsProdutos">
+          <div class="titleProduto">
+            <a href="#" title="Webcam Logitech 920s Full HD 1080p">Webcam Logitech 920s Full HD 1080p</a>
+          </div>
+          <div class="stockProduto">
+            <span><i class="fas fa-circle"></i>Em stock</span>
+          </div>
+          <div class="priceProduto">
+            <span>109,90 €</span>
+          </div>
+        </div>
+      </div>
+      <div class="cardProduto">
+        <img src="assets/Webcam_3.jpg" />
+        <div class="detailsProdutos">
+          <div class="titleProduto">
+            <a href="#" title="Webcam Ozone Live X50 1080p Pro">Webcam Ozone Live X50 1080p Pro</a>
+          </div>
+          <div class="stockProduto">
+            <span><i class="fas fa-circle"></i>Em stock</span>
+          </div>
+          <div class="priceProduto">
+            <span>44,90 €</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sectionProdutos">
+    <h1>Simulação e Controladores Gaming</h1>
+    <div class="wrapperProdutos">
+      <div class="cardProduto">
+        <img src="assets/Cockpit.jpg" />
+        <div class="detailsProdutos">
+          <div class="titleProduto">
+            <a href="#" title="Baquet de Competição Playseat Forza Motorsport Pro Preta">Baquet de Competição Playseat
+              Forza Motorsport Pro Preta</a>
+          </div>
+          <div class="stockProduto">
+            <span><i class="fas fa-circle"></i>Em stock</span>
+          </div>
+          <div class="priceProduto">
+            <span>399,90 €</span>
+          </div>
+        </div>
+      </div>
+      <div class="cardProduto">
+        <img src="assets/Volante_1.jpg" />
+        <div class="detailsProdutos">
+          <div class="titleProduto">
+            <a href="#" title="Volante Thrustmaster TS-XW Racer Sparco P310 Competition Xbox One/PC">Volante
+              Thrustmaster TS-XW Racer Sparco P310 Competition Xbox
+              One/PC</a>
+          </div>
+          <div class="stockProduto">
+            <span><i class="fas fa-circle"></i>Em stock</span>
+          </div>
+          <div class="priceProduto">
+            <span>633,90 €</span>
+          </div>
+        </div>
+      </div>
+      <div class="cardProduto">
+        <img src="assets/Volante_2.jpg" />
+        <div class="detailsProdutos">
+          <div class="titleProduto">
+            <a href="#" title="Volante Logitech G29 Driving Force PS4/PS3/PC">Volante Logitech G29 Driving Force
+              PS4/PS3/PC</a>
+          </div>
+          <div class="stockProduto">
+            <span><i class="fas fa-circle"></i>Em stock</span>
+          </div>
+          <div class="priceProduto">
+            <span>284,90 €</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <!-- Newsletter da página -->
+    <section class="sectionNewsletter">
+      <div class="wrapperTextNewsletter">
+        <label class="titleNewsletter">
+          Receba as novidades e promoções da GSELL
+        </label>
+        <label class="subtitleNewsletter">Diretamente No Seu Email</label>
+      </div>
+      <!-- Form onde o utilizar insere o email onde quer receber as novidade do site -->
+      <form id="formNewsletter" action="#">
+        <input type="email" name="Email" placeholder="Email" />
+        <button>Enviar</button>
+      </form>
+    </section>
+    <!-- Rodapé da página -->
+    <section class="sectionFooter">
+      <div class="rowFooter">
+        <div class="columnFooter">
+          <img src="images/GSELL.svg" alt="GSELL" />
+          <ul>
+            <li>
+              <p>
+                As imagens apresentadas podem não corresponder às
+                especificações do produto no Mercado Português. Por questões
+                técnicas, as cores apresentadas podem deferir ligeiramente das
+                cores reais.
+              </p>
+              <br />
+              <p>© 2021 GSELL. Todos os direitos reservados.</p>
+            </li>
+          </ul>
+        </div>
+        <div class="columnFooter">
+          <label>Categorias</label>
+          <ul>
+            <li>
+              <!-- Link para a página catComponentes.html -->
+              <a href="catComponentes.html">Componentes</a>
+            </li>
+            <li>
+              <!-- Link para a página catPeriféricos.html -->
+              <a href="catPerifericos.html">Periféricos</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="columnFooter">
+          <label>Loja</label>
+          <ul>
+            <li>
+              <!-- Link para a página contact.html -->
+              <a href="contact.html">Contacte-nos</a>
+            </li>
+            <li>
+              <!-- Link para a página clientarea.html -->
+              <a href="clientarea.html">Área de Cliente</a>
+            </li>
+          </ul>
+        </div>
+        <div class="columnFooter">
+          <label>Suporte ao cliente</label>
+          <ul>
+            <li>
+              <!-- Link para a página faq.html -->
+              <a href="faq.html">FAQ's</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </footer>
+</body>
+
+</html>

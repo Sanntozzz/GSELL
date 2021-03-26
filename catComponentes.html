@@ -1,0 +1,463 @@
+<html lang="en">
+
+<head>
+  <!-- Encoding da página -->
+  <meta charset="UTF-8" />
+  <!-- Configura o viewport para a página aparecer corretamente em todos os dispositivos -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Define palavra-chaves para serviços de pesquisa -->
+  <meta name="keywords" content="HTML, CSS, JavaScript, GSELL" />
+  <!-- Define uma descrição para a página -->
+  <meta name="description" content="Loja de Informática GSELL" />
+  <!-- Define os autores da página -->
+  <meta name="author" content="João Santos, Leonardo Cardoso" />
+  <!-- Atualiza a página a cada 300 segundos -->
+  <meta http-equiv="refresh" content="300" />
+  <!-- Título da página -->
+  <title>Loja Online | GSELL</title>
+  <!-- Icone da página -->
+  <link rel="icon" href="favicon.svg" />
+  <!-- Importação do Font Awesome a partir do CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+    crossorigin="anonymous" />
+  <!-- Importação de fontes a partir do Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Orbitron:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <!-- Importação do main.css que aplica o estilo nos elementos da página -->
+  <link rel="stylesheet" href="css/main.css" />
+  <!-- Importação do JQuery a partir do CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+    crossorigin="anonymous"></script>
+  <!-- Importação do main.js que aplica o javascript nos elementos da página -->
+  <script src="js/main.js"></script>
+</head>
+
+<body>
+  <!-- Menu de navegação -->
+  <div class="topNavigation">
+    <!-- Imagem do menu de navegação -->
+    <a href="index.html"><img src="images/GSELL.svg" class="logoGSELL" /></a>
+    <!-- Icone para o menu de navegação em dispositivos móveis-->
+    <i class="fas fa-bars"></i>
+    <!-- Menu Dropdown -->
+    <div class="menuNavigation">
+      <div id="menuDropdown">
+        <button id="btnDropdown">
+          Categorias
+          <i class="fas fa-angle-down"></i>
+        </button>
+        <!-- Conteudo do menu dropdown -->
+        <div id="contentDropdown">
+          <!-- Link para a página catComponentes.html -->
+          <a href="catComponentes.html">Componentes</a>
+          <!-- Link para a página catPerifericos.html -->
+          <a href="catPerifericos.html">Periféricos</a>
+        </div>
+      </div>
+      <!-- Link para a página contact.html -->
+      <a href="contact.html">Contactos</a>
+      <!-- Link para a página clientarea.html -->
+      <a href="clientarea.html">Área Cliente</a>
+    </div>
+  </div>
+
+  <!-- Secção de produtos -->
+  <!-- Código repete-se ao longo em todas as "sectionProdutos" -->
+  <section class="sectionProdutos">
+    <h1>Motherboard</h1>
+    <div class="wrapperProdutos">
+      <!-- Produto -->
+      <div class="cardProduto">
+        <!-- Imagem do Produto -->
+
+        <img src="assets/MOTHERBOARD_1.jpg" />
+        <!-- Detalhes do produto tais como nome, stock e preço -->
+
+        <div class="detailsProdutos">
+          <div class="titleProduto">
+            <a href="#" title="Motherboard Extended-ATX Gigabyte Z490 Aorus Xtreme Waterforce (rev.
+                  1.0)">Motherboard Extended-ATX Gigabyte Z490 Aorus Xtreme Waterforce
+              (rev. 1.0)</a>
+          </div>
+          <div class="stockProduto">
+            <span><i class="fas fa-circle"></i>Em stock</span>
+          </div>
+          <div class="priceProduto">
+            <span>1269,90 €</span>
+          </div>
+        </div>
+      </div>
+      <div class="cardProduto">
+        <img src="assets/MOTHERBOARD_2.jpg" />
+        <div class="detailsProdutos">
+          <div class="titleProduto">
+            <a href="#" title="Motherboard Extended-ATX MSI MEG X299 Creation">Motherboard Extended-ATX MSI MEG X299
+              Creation</a>
+          </div>
+          <div class="stockProduto">
+            <span><i class="fas fa-circle"></i>Em stock</span>
+          </div>
+          <div class="priceProduto">
+            <span>569,80 €</span>
+          </div>
+        </div>
+      </div>
+      <div class="cardProduto">
+        <img src="assets/MOTHERBOARD_3.jpg" />
+        <div class="detailsProdutos">
+          <div class="titleProduto">
+            <a href="#" title="Motherboard Mini-ITX Gigabyte Z390 I Aorus Pro WiFi">Motherboard Mini-ITX Gigabyte Z390 I
+              Aorus Pro WiFi</a>
+          </div>
+          <div class="stockProduto">
+            <span><i class="fas fa-circle"></i>Em stock</span>
+          </div>
+          <div class="priceProduto">
+            <span>175,90 €</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sectionProdutos">
+    <h1>Processadores</h1>
+    <div class="wrapperProdutos">
+      <div class="cardProduto">
+        <img src="assets/CPU_1.jpg" />
+        <div class="detailsProdutos">
+          <div class="titleProduto">
+            <a href="#" title="Processador Intel Core i9-10940X 14-Core 3.3GHz c/ Turbo 4.6GHz
+                19.25MB Skt2066">Processador Intel Core i9-10940X 14-Core 3.3GHz c/ Turbo 4.6GHz
+              19.25MB Skt2066</a>
+          </div>
+          <div class="stockProduto">
+            <span><i class="fas fa-circle"></i>Em stock</span>
+          </div>
+          <div class="priceProduto">
+            <span>839,90 €</span>
+          </div>
+        </div>
+      </div>
+      <div class="cardProduto">
+        <img src="assets/CPU_2.jpg" />
+        <div class="detailsProdutos">
+          <div class="titleProduto">
+            <a href="#" title="Processador Intel Core i7-9700K Octa-Core 3.6GHz c/ Turbo 4.9GHz
+              12MB Skt1151">Processador Intel Core i7-9700K Octa-Core 3.6GHz c/ Turbo
+              4.9GHz 12MB Skt1151</a>
+          </div>
+          <div class="stockProduto">
+            <span><i class="fas fa-circle"></i>Em stock</span>
+          </div>
+          <div class="priceProduto">
+            <span>313,90 €</span>
+          </div>
+        </div>
+      </div>
+      <div class="cardProduto">
+        <img src="assets/CPU_3.jpg" />
+        <div class="detailsProdutos">
+          <div class="titleProduto">
+            <a href="#" title="Processador Intel Core i5-10400F 6-Core 2.9GHz c/ Turbo 4.3GHz 12MB
+                Skt1200">Processador Intel Core i5-10400F 6-Core 2.9GHz c/ Turbo 4.3GHz
+              12MB Skt1200</a>
+          </div>
+          <div class="stockProduto">
+            <span><i class="fas fa-circle"></i>Em stock</span>
+          </div>
+          <div class="priceProduto">
+            <span>148,90 €</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sectionProdutos">
+    <h1>Placas Gráficas</h1>
+    <div class="wrapperProdutos">
+      <div class="cardProduto">
+        <img src="assets/GPU_1.jpg" />
+        <div class="detailsProdutos">
+          <div class="titleProduto">
+            <a href="#" title="Placa Gráfica Gigabyte GeForce RTX 3090 Aorus Xtreme 24GB">Placa Gráfica Gigabyte GeForce
+              RTX 3090 Aorus Xtreme 24GB</a>
+          </div>
+          <div class="stockProduto">
+            <span><i class="fas fa-circle"></i>Em stock</span>
+          </div>
+          <div class="priceProduto">
+            <span>1269,90 €</span>
+          </div>
+        </div>
+      </div>
+      <div class="cardProduto">
+        <img src="assets/GPU_2.png" />
+        <div class="detailsProdutos">
+          <div class="titleProduto">
+            <a href="#" title="Placa Gráfica Gigabyte Aorus GeForce RTX 2080 SUPER 8GB">Placa Gráfica Gigabyte Aorus
+              GeForce RTX 2080 SUPER 8GB</a>
+          </div>
+          <div class="stockProduto">
+            <span><i class="fas fa-circle"></i>Em stock</span>
+          </div>
+          <div class="priceProduto">
+            <span>849,90 €</span>
+          </div>
+        </div>
+      </div>
+      <div class="cardProduto">
+        <img src="assets/GPU_3.jpg" />
+        <div class="detailsProdutos">
+          <div class="titleProduto">
+            <a href="#" title="Placa Gráfica MSI GeForce GTX 1660 SUPER Ventus XS OC 6G">Placa Gráfica MSI GeForce GTX
+              1660 SUPER Ventus XS OC 6G</a>
+          </div>
+          <div class="stockProduto">
+            <span><i class="fas fa-circle"></i>Em stock</span>
+          </div>
+          <div class="priceProduto">
+            <span>359,90 €</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sectionProdutos">
+    <h1>Memórias RAM</h1>
+    <div class="wrapperProdutos">
+      <div class="cardProduto">
+        <img src="assets/RAM_1.jpg" />
+        <div class="detailsProdutos">
+          <div class="titleProduto">
+            <a href="#" title="Memória RAM G.SKILL Trident Z Royal RGB 16GB (2x8GB) DDR4-4600MHz
+                CL18 Dourada">Memória RAM G.SKILL Trident Z Royal RGB 16GB (2x8GB)
+              DDR4-4600MHz CL18 Dourada</a>
+          </div>
+          <div class="stockProduto">
+            <span><i class="fas fa-circle"></i>Em stock</span>
+          </div>
+          <div class="priceProduto">
+            <span>408,80 €</span>
+          </div>
+        </div>
+      </div>
+      <div class="cardProduto">
+        <img src="assets/RAM_2.jpg" />
+        <div class="detailsProdutos">
+          <div class="titleProduto">
+            <a href="#" title="Memória RAM Crucial Ballistix RGB 32GB (2x16GB) DDR4-3200MHz CL16
+              Branca">Memória RAM Crucial Ballistix RGB 32GB (2x16GB) DDR4-3200MHz
+              CL16 Branca</a>
+          </div>
+          <div class="stockProduto">
+            <span><i class="fas fa-circle"></i>Em stock</span>
+          </div>
+          <div class="priceProduto">
+            <span>206,20 €</span>
+          </div>
+        </div>
+      </div>
+      <div class="cardProduto">
+        <img src="assets/RAM_3.jpg" />
+        <div class="detailsProdutos">
+          <div class="titleProduto">
+            <a href="#" title="Memória RAM G.SKILL Aegis 16GB (2x8GB) DDR4-3200MHz CL16 Preta">Memória RAM G.SKILL Aegis
+              16GB (2x8GB) DDR4-3200MHz CL16
+              Preta</a>
+          </div>
+          <div class="stockProduto">
+            <span><i class="fas fa-circle"></i>Em stock</span>
+          </div>
+          <div class="priceProduto">
+            <span>69,80 €</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sectionProdutos">
+    <h1>Fontes de Alimentação</h1>
+    <div class="wrapperProdutos">
+      <div class="cardProduto">
+        <img src="assets/Fonte_1.jpg" />
+        <div class="detailsProdutos">
+          <div class="titleProduto">
+            <a href="#" title="Fonte de Alimentação Corsair AX1600i Full Modular">Fonte de Alimentação Corsair AX1600i
+              Full Modular</a>
+          </div>
+          <div class="stockProduto">
+            <span><i class="fas fa-circle"></i>Em stock</span>
+          </div>
+          <div class="priceProduto">
+            <span>499,90 €</span>
+          </div>
+        </div>
+      </div>
+      <div class="cardProduto">
+        <img src="assets/Fonte_2.jpg" />
+        <div class="detailsProdutos">
+          <div class="titleProduto">
+            <a href="#" title="Fonte de Alimentação Asus ROG Thor 850W Platinum">Fonte de Alimentação Asus ROG Thor 850W
+              Platinum</a>
+          </div>
+          <div class="stockProduto">
+            <span><i class="fas fa-circle"></i>Em stock</span>
+          </div>
+          <div class="priceProduto">
+            <span>229,90 €</span>
+          </div>
+        </div>
+      </div>
+      <div class="cardProduto">
+        <img src="assets/Fonte_3.jpg" />
+        <div class="detailsProdutos">
+          <div class="titleProduto">
+            <a href="#" title="Fonte de Alimentação Corsair CX-F RGB CX650F 650W 80+ Bronze Full
+                Modular Preta">Fonte de Alimentação Corsair CX-F RGB CX650F 650W 80+ Bronze
+              Full Modular Preta</a>
+          </div>
+          <div class="stockProduto">
+            <span><i class="fas fa-circle"></i>Em stock</span>
+          </div>
+          <div class="priceProduto">
+            <span>87,90 €</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sectionProdutos">
+    <h1>Caixas de Computador</h1>
+    <div class="wrapperProdutos">
+      <div class="cardProduto">
+        <img src="assets/Caixa_1.jpg" />
+        <div class="detailsProdutos">
+          <div class="titleProduto">
+            <a href="#" title="Caixa Extended-ATX Corsair Super-Tower Obsidian 1000D Vidro
+                Temperado Preta">Caixa Extended-ATX Corsair Super-Tower Obsidian 1000D Vidro
+              Temperado Preta</a>
+          </div>
+          <div class="stockProduto">
+            <span><i class="fas fa-circle"></i>Em stock</span>
+          </div>
+          <div class="priceProduto">
+            <span>499,90 €</span>
+          </div>
+        </div>
+      </div>
+      <div class="cardProduto">
+        <img src="assets/Caixa_2.jpg" />
+        <div class="detailsProdutos">
+          <div class="titleProduto">
+            <a href="#" title="Caixa Extended-ATX Kolink Big Chungus RGB Preta">Caixa Extended-ATX Kolink Big Chungus
+              RGB Preta</a>
+          </div>
+          <div class="stockProduto">
+            <span><i class="fas fa-circle"></i>Em stock</span>
+          </div>
+          <div class="priceProduto">
+            <span>249,90 €</span>
+          </div>
+        </div>
+      </div>
+      <div class="cardProduto">
+        <img src="assets/Caixa_3.jpg" />
+        <div class="detailsProdutos">
+          <div class="titleProduto">
+            <a href="#" title="Caixa ATX Nox Hummer TGF RGB com Janela Preta">Caixa ATX Nox Hummer TGF RGB com Janela
+              Preta</a>
+          </div>
+          <div class="stockProduto">
+            <span><i class="fas fa-circle"></i>Em stock</span>
+          </div>
+          <div class="priceProduto">
+            <span>89,90 €</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <!-- Newsletter da página -->
+    <section class="sectionNewsletter">
+      <div class="wrapperTextNewsletter">
+        <label class="titleNewsletter">
+          Receba as novidades e promoções da GSELL
+        </label>
+        <label class="subtitleNewsletter">Diretamente No Seu Email</label>
+      </div>
+      <!-- Form onde o utilizar insere o email onde quer receber as novidade do site -->
+      <form id="formNewsletter" action="#">
+        <input type="email" name="Email" placeholder="Email" />
+        <button>Enviar</button>
+      </form>
+    </section>
+    <!-- Rodapé da página -->
+    <section class="sectionFooter">
+      <div class="rowFooter">
+        <div class="columnFooter">
+          <img src="images/GSELL.svg" alt="GSELL" />
+          <ul>
+            <li>
+              <p>
+                As imagens apresentadas podem não corresponder às
+                especificações do produto no Mercado Português. Por questões
+                técnicas, as cores apresentadas podem deferir ligeiramente das
+                cores reais.
+              </p>
+              <br />
+              <p>© 2021 GSELL. Todos os direitos reservados.</p>
+            </li>
+          </ul>
+        </div>
+        <div class="columnFooter">
+          <label>Categorias</label>
+          <ul>
+            <li>
+              <!-- Link para a página catComponentes.html -->
+              <a href="catComponentes.html">Componentes</a>
+            </li>
+            <li>
+              <!-- Link para a página catPeriféricos.html -->
+              <a href="catPerifericos.html">Periféricos</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="columnFooter">
+          <label>Loja</label>
+          <ul>
+            <li>
+              <!-- Link para a página contact.html -->
+              <a href="contact.html">Contacte-nos</a>
+            </li>
+            <li>
+              <!-- Link para a página clientarea.html -->
+              <a href="clientarea.html">Área de Cliente</a>
+            </li>
+          </ul>
+        </div>
+        <div class="columnFooter">
+          <label>Suporte ao cliente</label>
+          <ul>
+            <li>
+              <!-- Link para a página faq.html -->
+              <a href="faq.html">FAQ's</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </footer>
+</body>
+
+</html>
